@@ -1,0 +1,74 @@
+# ============================================
+# 只提交数据挖掘工程本身（notebook / 脚本 / 小型结果文件）
+# 原始数据集与可再生成的大体积产物一律不上传
+# ============================================
+
+# ---------- 原始数据集（体积过大，且可重新下载）----------
+Fashion-MNIST/dataset/
+gene/dataset/
+*.zip
+# 通用数据集目录约定：如需新增其他数据集，按下面命名存放即可自动忽略
+data/
+datasets/
+
+# ---------- 大体积二进制结果产物（可由 notebook 重新生成）----------
+*.npz
+*.npy
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.joblib
+
+# ---------- 模型权重 / 缓存 ----------
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+.cache/
+
+# ---------- Notebook 运行时产物 ----------
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+*.nbconvert.ipynb
+*_executed.ipynb
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.ipython_profile/
+
+# ---------- 日志与临时文件 ----------
+*.log
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+
+# ---------- 操作系统 ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- 编辑器 / IDE ----------
+.vscode/
+.idea/
+*.code-workspace
+
+# ---------- WorkBuddy ----------
+.workbuddy/
+
+# ---------- 环境变量与密钥 ----------
+.env
+.env.*
+*.key
+*.pem
